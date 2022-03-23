@@ -5,7 +5,7 @@ import styles from '../styles/Entrada.module.css'
 
 
 const Entrada = ({entrada}) => {
-  const {titulo, precio, contenido, imagen, published_at, id} = entrada
+  const {titulo, precio, contenido, imagen, published_at, id, url} = entrada
 
   return (
     <article>
@@ -16,7 +16,7 @@ const Entrada = ({entrada}) => {
       <p className={styles.fecha}>{formatearFecha(published_at)}</p>
       <p className={styles.descripcion}>{contenido}</p>
       <p className={styles.precio}>$ {precio}</p>
-      <Link href={`/blog/${id}`}>
+      <Link href={`/blog/${url}`}>
         <a className={styles.enlace}>
         Agregar al Carrito
         </a>

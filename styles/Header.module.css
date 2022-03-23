@@ -1,49 +1,66 @@
 .header {
-    background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(../public/img/header.jpg);
-    background-size: cover;
-    background-position: 50%;
-    padding: 5rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.5),
+      rgb(0 0 0 / 0.3)
+    ),
+    url(../public/img/logo2.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 115vh;
+  background-position-y: 50%;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
-@media (min-width:768px ) {
-    .flex {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .navegacion {
-    display: flex;
-    gap: 2rem;
-    margin-top: 5rem;
-
+  display: flex;
+  gap: 6rem;
+  margin-top: 5rem;
+  margin-right: 5rem;
 }
 
-@media (min-width:768px ) {
-    .navegacion {
-        margin-top: 0;
-    }
+@media (min-width: 768px) {
+  .navegacion {
+    margin-top: 0;
+  }
 }
 
 .navegacion a {
-    text-decoration: none;
-    color: var(--blanco);
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  transition-property: background-color;
+  transition-duration: 0.3s;
 }
 
 .navegacion a:hover {
-    color: var(--primary)
+  color: var(--primary);
 }
+
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 46%;
+  width: 6rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+
+

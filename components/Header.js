@@ -8,18 +8,26 @@ const Header = () => {
         <div className={`contenedor ${styles.flex}`}>
             <Link href="/">
               <a>
-                <Image width={400} height={100} src="/img/logo.svg" alt="Imagen logo" />
+                <Image width={200} height={200} src="/img/logo.png" alt="Imagen logo" />
               </a>
             </Link>
 
             <nav className={styles.navegacion}>
                 <Link href="/">Inicio</Link>
                 <Link href="/nosotros">Nosotros</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/tienda">Tienda</Link>
+                <Link href="/blog">Carta</Link>
+               
             </nav>
 
         </div>
+
+        <button className={`animate__animated animate__bounce animate__infinite	infinite animate__slow ${styles.button}` }>
+        <Image width={200} height={200} src="/img/arrow.png" alt="Imagen logo" />
+        </button>
+
+        {/* <div className={styles.containerButton}>
+       
+        </div> */}
     </header>
   )
 }

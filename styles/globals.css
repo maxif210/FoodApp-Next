@@ -1,14 +1,17 @@
 :root {
   --primary: #e99401;
   --negro: #262626;
-  --blanco: #FFF;
-  --fuente-principal: 'Outfit', sans-serif;
+  --blanco: #E0E0E0 ;
+  --fuente-principal: "Roboto Slab", serif;
+  /* --fuente-secundaria:  */
 }
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {

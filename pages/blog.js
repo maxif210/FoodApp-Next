@@ -6,7 +6,7 @@ const Blog = ({ entradas }) => {
   return (
     <Layout pagina="Blog">
       <main className="contenedor">
-        <h2 className="heading">BLOG</h2>
+        <h2 className="heading">CARTA</h2>
         <div className={styles.blog}>
           {entradas.map((entrada) => {
             return <Entrada key={entrada.id} entrada={entrada} />;
